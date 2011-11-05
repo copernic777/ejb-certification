@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ejb-certification.iml" filepath="$PROJECT_DIR$/ejb-certification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stateful-session-1-web/stateful-session-1-web.iml" filepath="$PROJECT_DIR$/stateful-session-1-web/stateful-session-1-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stateful-session-2-web/stateful-session-2-web.iml" filepath="$PROJECT_DIR$/stateful-session-2-web/stateful-session-2-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stateful-session-3-web/stateful-session-3-web.iml" filepath="$PROJECT_DIR$/stateful-session-3-web/stateful-session-3-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stateful-session-4-web/stateful-session-4-web.iml" filepath="$PROJECT_DIR$/stateful-session-4-web/stateful-session-4-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stateless-session-1-web/stateless-session-1-web.iml" filepath="$PROJECT_DIR$/stateless-session-1-web/stateless-session-1-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stateless-session-2-web/stateless-session-2-web.iml" filepath="$PROJECT_DIR$/stateless-session-2-web/stateless-session-2-web.iml" />
+    </modules>
+  </component>
+</project>
+
