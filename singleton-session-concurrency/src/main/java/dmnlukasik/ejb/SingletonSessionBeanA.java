@@ -1,13 +1,11 @@
 package dmnlukasik.ejb;
 
-import javax.ejb.ConcurrencyManagement;
-import javax.ejb.ConcurrencyManagementType;
-import javax.ejb.LocalBean;
-import javax.ejb.Singleton;
+import javax.ejb.*;
 
 @Singleton
 @LocalBean
 @ConcurrencyManagement(ConcurrencyManagementType.CONTAINER)
+@Lock(LockType.READ)
 public class SingletonSessionBeanA {
     public void slowMethod() {
         System.out.println("SingletonSessionBeanA - Entering slowMethod");
