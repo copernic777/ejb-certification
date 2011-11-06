@@ -5,7 +5,7 @@ import javax.ejb.*;
 @Singleton
 @LocalBean
 @ConcurrencyManagement(ConcurrencyManagementType.CONTAINER)
-@Lock(LockType.READ)
+@Lock(LockType.WRITE)
 public class SingletonSessionBeanA {
     public void slowMethod() {
         System.out.println("SingletonSessionBeanA - Entering slowMethod");
@@ -13,6 +13,7 @@ public class SingletonSessionBeanA {
         System.out.println("SingletonSessionBeanA - Exiting slowMethod");
     }
 
+    @AccessTimeout(100)
     public void fastMethod() {
         System.out.println("SingletonSessionBeanA - Entering fastMethod");
         waitSomeTime(1);
