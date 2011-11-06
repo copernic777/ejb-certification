@@ -4,10 +4,12 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.ejb.LocalBean;
 import javax.ejb.Singleton;
+import javax.ejb.Startup;
 import java.util.Date;
 
 @Singleton
 @LocalBean
+@Startup
 public class SingletonSessionBeanA {
     private final static String BEAN_NAME = "SingletonSessionBeanA";
 
