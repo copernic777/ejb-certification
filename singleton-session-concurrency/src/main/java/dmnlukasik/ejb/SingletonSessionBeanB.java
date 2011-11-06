@@ -9,13 +9,13 @@ import javax.ejb.Singleton;
 @LocalBean
 @ConcurrencyManagement(ConcurrencyManagementType.BEAN)
 public class SingletonSessionBeanB {
-    public void slowMethod() {
+    public synchronized void slowMethod() {
         System.out.println("SingletonSessionBeanB - Entering slowMethod");
         waitSomeTime(10);
         System.out.println("SingletonSessionBeanB - Exiting slowMethod");
     }
 
-    public void fastMethod() {
+    public synchronized void fastMethod() {
         System.out.println("SingletonSessionBeanB - Entering fastMethod");
         waitSomeTime(1);
         System.out.println("SingletonSessionBeanB - Exiting fastMethod");
