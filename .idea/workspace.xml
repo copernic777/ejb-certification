@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="897a95f7-8865-4e37-bc47-fcbaa5f292c6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stateless-session-3-web/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stateless-session-3-web/src/main/java/dmnlukasik/client/StatelessSession3Servlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stateless-session-3-web/src/main/java/dmnlukasik/ejb/StatelessSession3Bean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stateless-session-3-web/src/main/java/dmnlukasik/ejb/StatelessSession3Remote.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stateless-session-3-web/stateless-session-3-web.iml" />
+      <change type="DELETED" beforePath="G:\workspace\idea\ejb-certification\stateful-session-3-web\src\test\java\dmnlukasik\ejb\StatefulSession3BeanTest.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stateless-session-2-web/src/main/java/dmnlukasik/ejb/StatelessSession2Local.java" afterPath="$PROJECT_DIR$/stateless-session-2-web/src/main/java/dmnlukasik/ejb/StatelessSession2Local.java" />
     </list>
     <ignored path="ejb-certification.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,6 +68,19 @@
   <component name="FavoritesManager">
     <favorites_list name="ejb-certification" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="StatelessSession3Bean.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/stateless-session-3-web/src/main/java/dmnlukasik/ejb/StatelessSession3Bean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="29" selection-start="599" selection-end="599" vertical-scroll-proportion="0.72139305">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
@@ -71,10 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/stateful-sesson-4-web/src/main/java/dmnlukasik/ejb/StatefulSession4Bean.java" />
-        <option value="$PROJECT_DIR$/stateful-sesson-4-web/src/main/webapp/WEB-INF/ejb-jar.xml" />
-        <option value="$PROJECT_DIR$/stateful-session-4-web/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.idea/modules.xml" />
         <option value="$PROJECT_DIR$/stateless-session-1-web/pom.xml" />
         <option value="$PROJECT_DIR$/stateless-session-1-web/src/test/java/ejb/StatefulSession1BeanTest.java" />
@@ -83,10 +101,14 @@
         <option value="$PROJECT_DIR$/stateless-session-2-web/pom.xml" />
         <option value="$PROJECT_DIR$/stateless-session-2-web/src/test/java/dmnlukasik/ejb/java/dmnlukasik/ejb/StatelesslSession1BeanTest.java" />
         <option value="$PROJECT_DIR$/stateless-session-2-web/src/test/java/dmnlukasik/ejb/StatelesslSession1BeanTest.java" />
-        <option value="$PROJECT_DIR$/stateless-session-2-web/src/main/java/dmnlukasik/ejb/StatelessSession2Local.java" />
         <option value="$PROJECT_DIR$/stateless-session-2-web/src/main/java/dmnlukasik/ejb/StatelessSession2Bean.java" />
         <option value="$PROJECT_DIR$/stateless-session-2-web/src/main/java/dmnlukasik/client/StatelessSession2Servlet.java" />
         <option value="$PROJECT_DIR$/stateless-session-2-web/src/test/java/dmnlukasik/ejb/StatelesslSession2BeanTest.java" />
+        <option value="$PROJECT_DIR$/stateless-session-3-web/pom.xml" />
+        <option value="$PROJECT_DIR$/stateless-session-3-web/src/main/java/dmnlukasik/client/StatelessSession3Servlet.java" />
+        <option value="$PROJECT_DIR$/stateless-session-3-web/src/test/java/dmnlukasik/ejb/StatelesslSession3BeanTest.java" />
+        <option value="$PROJECT_DIR$/stateless-session-2-web/src/main/java/dmnlukasik/ejb/StatelessSession2Local.java" />
+        <option value="$PROJECT_DIR$/stateless-session-3-web/src/main/java/dmnlukasik/ejb/StatelessSession3Remote.java" />
       </list>
     </option>
   </component>
@@ -106,7 +128,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="stateless-session-2-web" />
+          <option name="myItemId" value="stateless-session-3-web" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -116,7 +138,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="stateless-session-2-web" />
+          <option name="myItemId" value="stateless-session-3-web" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -184,6 +206,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejb-certification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejb-certification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stateless-session-3-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -218,17 +254,18 @@
       <recent name="dmnlukasik.ejb" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dmnlukasik.ejb" />
       <recent name="dmnlukasik.ejb.java.dmnlukasik.ejb" />
       <recent name="java.dmnlukasik.ejb" />
       <recent name="ejb" />
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\workspace\idea\ejb-certification\stateless-session-3-web\src\main\java" />
       <recent name="G:\workspace\idea\ejb-certification\stateless-session-2-web\src\main\java" />
       <recent name="G:\workspace\idea\ejb-certification\stateless-session-1-web\src\main\java" />
       <recent name="G:\workspace\idea\ejb-certification\stateful-sesson-4-web\src\main\java" />
       <recent name="G:\workspace\idea\ejb-certification\stateful-session-3-web\src\main\java" />
-      <recent name="G:\workspace\idea\ejb-certification\stateful-session-2-web\src\main\java" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="dmnlukasik.ejb" />
@@ -238,29 +275,7 @@
       <recent name="ejb" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StatelesslSession2BeanTest">
-    <configuration default="false" name="StatefulSession1BeanTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="stateful-session-1-web" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="dmnlukasik.ejb" />
-      <option name="MAIN_CLASS_NAME" value="dmnlukasik.ejb.StatefulSession1BeanTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.StatelesslSession3BeanTest">
     <configuration default="false" name="StatefulSession2BeanTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="stateful-session-2-web" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -333,6 +348,28 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="dmnlukasik.ejb" />
       <option name="MAIN_CLASS_NAME" value="dmnlukasik.ejb.StatelesslSession2BeanTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="StatelesslSession3BeanTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="stateless-session-3-web" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="dmnlukasik.ejb" />
+      <option name="MAIN_CLASS_NAME" value="dmnlukasik.ejb.StatelesslSession3BeanTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -515,11 +552,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.StatefulSession1BeanTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.StatefulSession2BeanTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.StatefulSession3BeanTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.StatefulSession4BeanTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.StatelesslSession2BeanTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.StatefulSession2BeanTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.StatefulSession3BeanTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.StatefulSession4BeanTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.StatelesslSession2BeanTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.StatelesslSession3BeanTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -559,20 +596,20 @@
     <layout>
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979724" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32846716" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32927817" sideWeight="0.6703125" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5171875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3417004" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -627,31 +664,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="58" selection-start="940" selection-end="940" vertical-scroll-proportion="0.2562814" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/ant.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="104" selection-start="335" selection-end="335" vertical-scroll-proportion="0.17085427" />
@@ -687,9 +699,23 @@
         <state line="12" column="4" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stateless-session-2-web/src/main/java/dmnlukasik/ejb/StatelessSession2Local.java">
+    <entry file="file://$PROJECT_DIR$/stateless-session-2-web/src/test/java/dmnlukasik/ejb/StatelesslSession2BeanTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="100" selection-end="100" vertical-scroll-proportion="0.08571429" />
+        <state line="27" column="35" selection-start="643" selection-end="643" vertical-scroll-proportion="0.53833336" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stateless-session-3-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="39" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stateless-session-3-web/src/main/java/dmnlukasik/client/StatelessSession3Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stateless-session-2-web/src/main/java/dmnlukasik/ejb/StatelessSession2Bean.java">
@@ -697,14 +723,32 @@
         <state line="30" column="25" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stateless-session-2-web/src/main/java/dmnlukasik/client/StatelessSession2Servlet.java">
+    <entry file="file://$PROJECT_DIR$/stateless-session-2-web/src/main/java/dmnlukasik/ejb/StatelessSession2Local.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="34" selection-start="524" selection-end="546" vertical-scroll-proportion="0.0" />
+        <state line="4" column="6" selection-start="56" selection-end="56" vertical-scroll-proportion="0.114285715">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stateless-session-2-web/src/test/java/dmnlukasik/ejb/StatelesslSession2BeanTest.java">
+    <entry file="file://$PROJECT_DIR$/stateless-session-3-web/src/main/java/dmnlukasik/ejb/StatelessSession3Remote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="35" selection-start="643" selection-end="643" vertical-scroll-proportion="0.53833336" />
+        <state line="4" column="7" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stateless-session-2-web/src/main/java/dmnlukasik/client/StatelessSession2Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="22" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stateless-session-3-web/src/main/java/dmnlukasik/ejb/StatelessSession3Bean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="29" selection-start="599" selection-end="599" vertical-scroll-proportion="0.72139305">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
@@ -759,7 +803,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>stateless-session-1-web</last-edited>
+          <last-edited>stateless-session-3-web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
