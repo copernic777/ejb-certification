@@ -17,6 +17,7 @@
         <module>stateless-session-1-web</module>
         <module>stateless-session-2-web</module>
         <module>stateless-session-3-web</module>
+        <module>stateless-session-4-web</module>
     </modules>
 
     <build>
