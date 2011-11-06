@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="897a95f7-8865-4e37-bc47-fcbaa5f292c6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stateless-session-4-web/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stateless-session-4-web/src/main/java/dmnlukasik/client/StatelessSession4Servlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stateless-session-4-web/src/main/java/dmnlukasik/ejb/StatelessSession4Bean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stateless-session-4-web/src/main/webapp/WEB-INF/ejb-jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stateless-session-4-web/src/test/java/dmnlukasik/ejb/StatelesslSession4BeanTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stateless-session-4-web/stateless-session-4-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/damian.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/damian.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/singleton-session-1-web/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/singleton-session-1-web/singleton-session-1-web.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/singleton-session-1-web/src/main/java/dmnlukasik/client/SingletonClientServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/singleton-session-1-web/src/main/java/dmnlukasik/ejb/SingletonSessionBeanA.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/singleton-session-1-web/src/main/java/dmnlukasik/ejb/SingletonSessionBeanB.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
@@ -69,7 +67,39 @@
     <favorites_list name="ejb-certification" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="SingletonSessionBeanA.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singleton-session-1-web/src/main/java/dmnlukasik/ejb/SingletonSessionBeanA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="23" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingletonClientServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singleton-session-1-web/src/main/java/dmnlukasik/client/SingletonClientServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="23" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingletonSessionBeanB.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/singleton-session-1-web/src/main/java/dmnlukasik/ejb/SingletonSessionBeanB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="31" selection-start="431" selection-end="431" vertical-scroll-proportion="0.5074627">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -83,10 +113,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/stateless-session-2-web/src/test/java/dmnlukasik/ejb/StatelesslSession1BeanTest.java" />
-        <option value="$PROJECT_DIR$/stateless-session-2-web/src/main/java/dmnlukasik/ejb/StatelessSession2Bean.java" />
-        <option value="$PROJECT_DIR$/stateless-session-2-web/src/main/java/dmnlukasik/client/StatelessSession2Servlet.java" />
-        <option value="$PROJECT_DIR$/stateless-session-2-web/src/test/java/dmnlukasik/ejb/StatelesslSession2BeanTest.java" />
         <option value="$PROJECT_DIR$/stateless-session-3-web/pom.xml" />
         <option value="$PROJECT_DIR$/stateless-session-3-web/src/main/java/dmnlukasik/client/StatelessSession3Servlet.java" />
         <option value="$PROJECT_DIR$/stateless-session-3-web/src/test/java/dmnlukasik/ejb/StatelesslSession3BeanTest.java" />
@@ -99,6 +125,10 @@
         <option value="$PROJECT_DIR$/stateless-session-4-web/src/main/java/dmnlukasik/client/StatelessSession4Servlet.java" />
         <option value="$PROJECT_DIR$/stateless-session-4-web/src/main/java/dmnlukasik/ejb/StatelessSession4Bean.java" />
         <option value="$PROJECT_DIR$/stateless-session-4-web/src/main/webapp/WEB-INF/ejb-jar.xml" />
+        <option value="$PROJECT_DIR$/singleton-session-1-web/pom.xml" />
+        <option value="$PROJECT_DIR$/singleton-session-1-web/src/main/java/dmnlukasik/ejb/SingletonSessionBeanB.java" />
+        <option value="$PROJECT_DIR$/singleton-session-1-web/src/main/java/dmnlukasik/ejb/SingletonSessionBeanA.java" />
+        <option value="$PROJECT_DIR$/singleton-session-1-web/src/main/java/dmnlukasik/client/SingletonClientServlet.java" />
       </list>
     </option>
   </component>
@@ -117,8 +147,14 @@
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
+      </PATH>
+      <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="stateless-session-4-web" />
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="singleton-session-1-web" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -128,18 +164,12 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="stateless-session-4-web" />
+          <option name="myItemId" value="singleton-session-1-web" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="Lifecycle" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -193,6 +223,158 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ejb-certification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejb-certification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejb-certification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="singleton-session-1-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejb-certification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejb-certification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="singleton-session-1-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejb-certification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejb-certification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="singleton-session-1-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejb-certification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejb-certification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="singleton-session-1-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejb-certification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejb-certification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="singleton-session-1-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dmnlukasik" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejb-certification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejb-certification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="singleton-session-1-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dmnlukasik" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -618,7 +800,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remote stateless session bean example." />
+    <option name="LAST_COMMIT_MESSAGE" value="Stateless session bean without annotations example." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -633,6 +815,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="intellij config file." />
     <MESSAGE value="Remote stateless session bean example." />
+    <MESSAGE value="Stateless session bean without annotations example." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -642,28 +825,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/stateless-session-2-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stateless-session-2-web/src/test/java/dmnlukasik/ejb/StatelesslSession2BeanTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="35" selection-start="643" selection-end="643" vertical-scroll-proportion="0.53833336" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stateless-session-3-web/src/main/java/dmnlukasik/client/StatelessSession3Servlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stateless-session-2-web/src/main/java/dmnlukasik/ejb/StatelessSession2Bean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="25" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stateless-session-2-web/src/main/java/dmnlukasik/ejb/StatelessSession2Local.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="6" selection-start="56" selection-end="56" vertical-scroll-proportion="0.114285715">
@@ -727,13 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stateful-session-4-web/src/main/webapp/WEB-INF/ejb-jar.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="600" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stateless-session-4-web/src/test/java/dmnlukasik/ejb/StatelesslSession4BeanTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="12" selection-start="455" selection-end="455" vertical-scroll-proportion="0.31166667">
@@ -744,6 +898,45 @@
     <entry file="file://$PROJECT_DIR$/stateless-session-4-web/src/main/webapp/WEB-INF/ejb-jar.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="23" selection-start="603" selection-end="603" vertical-scroll-proportion="0.44371942">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleton-session-1-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="48" selection-start="540" selection-end="540" vertical-scroll-proportion="0.3882545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stateful-session-4-web/src/main/webapp/WEB-INF/ejb-jar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="600" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleton-session-1-web/src/main/java/dmnlukasik/client/SingletonClientServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="23" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleton-session-1-web/src/main/java/dmnlukasik/ejb/SingletonSessionBeanA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="23" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleton-session-1-web/src/main/java/dmnlukasik/ejb/SingletonSessionBeanB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="31" selection-start="431" selection-end="431" vertical-scroll-proportion="0.5074627">
           <folding />
         </state>
       </provider>
@@ -800,7 +993,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>stateless-session-3-web</last-edited>
+          <last-edited>singleton-session-1-web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

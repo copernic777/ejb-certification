@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ejb-certification.iml" filepath="$PROJECT_DIR$/ejb-certification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/singleton-session-1-web/singleton-session-1-web.iml" filepath="$PROJECT_DIR$/singleton-session-1-web/singleton-session-1-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/stateful-session-1-web/stateful-session-1-web.iml" filepath="$PROJECT_DIR$/stateful-session-1-web/stateful-session-1-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/stateful-session-2-web/stateful-session-2-web.iml" filepath="$PROJECT_DIR$/stateful-session-2-web/stateful-session-2-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/stateful-session-3-web/stateful-session-3-web.iml" filepath="$PROJECT_DIR$/stateful-session-3-web/stateful-session-3-web.iml" />
