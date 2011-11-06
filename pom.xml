@@ -20,6 +20,7 @@
         <module>stateless-session-4-web</module>
         <module>singleton-session-1-web</module>
         <module>singleton-session-concurrency</module>
+        <module>local-session-bean-client</module>
     </modules>
 
     <build>
