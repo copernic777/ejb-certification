@@ -11,4 +11,8 @@
     <packaging>war</packaging>
     <name>${project.artifactId}</name>
 
+    <build>
+        <finalName>local-session-bean-client</finalName>
+    </build>
+
 </project>
