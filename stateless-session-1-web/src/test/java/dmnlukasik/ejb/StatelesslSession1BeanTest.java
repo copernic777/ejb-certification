@@ -1,6 +1,5 @@
 package dmnlukasik.ejb;
 
-import dmnlukasik.ejb.StatelessSession1Bean;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;

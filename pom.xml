@@ -23,6 +23,7 @@
         <module>local-session-bean-client</module>
         <module>remote-session-bean</module>
         <module>remote-javaee-session-bean-client</module>
+        <module>remote-javase-session-bean-client</module>
     </modules>
 
     <build>
@@ -53,7 +54,6 @@
             <groupId>org.glassfish.extras</groupId>
             <artifactId>glassfish-embedded-all</artifactId>
             <version>3.0</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>javax</groupId>

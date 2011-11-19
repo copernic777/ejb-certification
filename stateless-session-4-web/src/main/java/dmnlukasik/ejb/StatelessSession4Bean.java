@@ -2,9 +2,7 @@ package dmnlukasik.ejb;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import javax.ejb.LocalBean;
 import javax.ejb.Remove;
-import javax.ejb.Stateless;
 import java.util.Date;
 
 public class StatelessSession4Bean {

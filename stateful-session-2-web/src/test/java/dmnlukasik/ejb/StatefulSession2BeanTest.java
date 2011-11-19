@@ -1,6 +1,5 @@
 package dmnlukasik.ejb;
 
-import dmnlukasik.ejb.StatefulSession2Local;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
