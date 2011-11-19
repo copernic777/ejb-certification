@@ -21,6 +21,8 @@
         <module>singleton-session-1-web</module>
         <module>singleton-session-concurrency</module>
         <module>local-session-bean-client</module>
+        <module>remote-session-bean</module>
+        <module>remote-javaee-session-bean-client</module>
     </modules>
 
     <build>
