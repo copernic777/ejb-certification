@@ -24,6 +24,7 @@
         <module>remote-session-bean</module>
         <module>remote-javaee-session-bean-client</module>
         <module>remote-javase-session-bean-client</module>
+        <module>session-bean-identity</module>
     </modules>
 
     <build>
