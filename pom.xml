@@ -25,6 +25,7 @@
         <module>remote-javaee-session-bean-client</module>
         <module>remote-javase-session-bean-client</module>
         <module>session-bean-identity</module>
+        <module>business-method-interceptors</module>
     </modules>
 
     <build>
