@@ -3,6 +3,7 @@ package dmnlukasik.ejb;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.ejb.LocalBean;
+import javax.ejb.Schedule;
 import javax.ejb.Singleton;
 import javax.interceptor.Interceptors;
 import java.util.Date;
@@ -32,5 +33,10 @@ public class SingletonSessionBeanA {
 
     public void storeMessage(final String inStoredMessage) {
         storedMessage = inStoredMessage;
+    }
+
+    @Schedule(second = "*/5", minute = "*", hour = "*")
+    public void doPeriodic() {
+        System.out.println("*** Do periodic: " + (new Date()));
     }
 }

@@ -1,6 +1,7 @@
 package dmnlukasik.ejb;
 
 import javax.interceptor.AroundInvoke;
+import javax.interceptor.AroundTimeout;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
 
@@ -12,15 +13,24 @@ public class LogInterceptor extends LogInterceptorSuperclass {
     }
 
     @AroundInvoke
-    public Object logMethodEntryExit(InvocationContext invocationContext) throws
+    public Object logMethodEntryExit(InvocationContext ic) throws
             Exception {
-        log(invocationContext, " LogInterceptor - Entering method: ");
-        Object theResult = invocationContext.proceed();
-        log(invocationContext, " LogInterceptor - Exiting method: ");
+        log(ic, " LogInterceptor - Entering method: ");
+        Object theResult = ic.proceed();
+        log(ic, " LogInterceptor - Exiting method: ");
         return theResult;
     }
 
-    private void log(InvocationContext invocationContext, String message) {
-        System.out.println(message + invocationContext.getMethod().getName());
+    private void log(InvocationContext ic, String message) {
+        System.out.println(message + ic.getMethod().getName());
+    }
+
+    @AroundTimeout
+    public Object logTimeout(InvocationContext ic)
+            throws Exception {
+        log(ic, " LogInterceptor - Entering timeout: ");
+        Object theResult = ic.proceed();
+        log(ic, " LogInterceptor - Exiting timeout: ");
+        return theResult;
     }
 }
