@@ -5,7 +5,7 @@ import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
 
 @Interceptor
-public class LogInterceptor {
+public class LogInterceptor extends LogInterceptorSuperclass {
 
     public LogInterceptor() {
         System.out.println("LogInterceptor - Constructor");
