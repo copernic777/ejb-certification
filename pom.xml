@@ -27,6 +27,7 @@
         <module>session-bean-identity</module>
         <module>business-method-interceptors</module>
         <module>asynch-ejb-invocation</module>
+        <module>topic-message-driven-example</module>
     </modules>
 
     <build>
