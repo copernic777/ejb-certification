@@ -36,6 +36,7 @@
         <module>message-driven-bean-se-client</module>
         <module>commons</module>
         <module>ejb-transactions</module>
+        <module>ejb-security-annotations</module>
     </modules>
 
     <build>

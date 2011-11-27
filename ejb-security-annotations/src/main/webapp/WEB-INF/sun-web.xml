@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sun-web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Application Server 9.0 Servlet 2.5//EN"
+        "http://www.sun.com/software/appserver/dtds/sun-web-app_2_5-0.dtd">
+<sun-web-app error-url="">
+    <context-root>/ejb-security-annotations</context-root>
+
+    <!--
+        The application's role "superusers" is mapped to the application
+        server principal (user) "ivan".
+        This gives the user "ivan" defined in the application server
+        access to the parts of the application that requires the user
+        to be in the "superusers" role.
+    -->
+    <security-role-mapping>
+        <role-name>superusers</role-name>
+        <principal-name>ivan</principal-name>
+    </security-role-mapping>
+
+    <!--
+        The application's role "plainusers" is mapped to the application
+        server's user group "plain-users"
+        This gives all the users defined in the application server that
+        belongs to the "plain-users" group access to the parts of the
+        application that requires the the user to be in the "plainusers" role.
+    -->
+    <security-role-mapping>
+        <role-name>plainusers</role-name>
+        <group-name>plain-users</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>runasadmin</role-name>
+        <principal-name>runas-superuser</principal-name>
+    </security-role-mapping>
+
+    <class-loader delegate="true"/>
+</sun-web-app>
