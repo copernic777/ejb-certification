@@ -35,6 +35,7 @@
         <module>queue-message-driven-example</module>
         <module>message-driven-bean-se-client</module>
         <module>commons</module>
+        <module>ejb-transactions</module>
     </modules>
 
     <build>
