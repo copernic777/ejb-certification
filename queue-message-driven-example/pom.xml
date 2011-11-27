@@ -7,12 +7,21 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>ejb-certification</groupId>
     <artifactId>queue-message-driven-example</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>${project.artifactId}</name>
 
     <build>
         <finalName>queue-message-driven-example</finalName>
     </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>ejb-certification</groupId>
+            <artifactId>commons</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

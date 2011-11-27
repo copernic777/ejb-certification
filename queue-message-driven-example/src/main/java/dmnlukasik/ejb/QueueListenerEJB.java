@@ -1,5 +1,7 @@
 package dmnlukasik.ejb;
 
+import dmnlukasik.commons.MyMessage;
+
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
 import javax.jms.JMSException;

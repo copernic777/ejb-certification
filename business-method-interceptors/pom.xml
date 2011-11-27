@@ -7,7 +7,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>ejb-certification</groupId>
     <artifactId>business-method-interceptors</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>${project.artifactId}</name>
 

@@ -1,4 +1,4 @@
-package dmnlukasik.ejb;
+package dmnlukasik.commons;
 
 import java.io.Serializable;
 import java.util.Date;

@@ -1,6 +1,6 @@
 package dmnlukasik.client;
 
-import dmnlukasik.ejb.MyMessage;
+import dmnlukasik.commons.MyMessage;
 
 import javax.annotation.Resource;
 import javax.jms.*;

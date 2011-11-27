@@ -1,6 +1,6 @@
 package dmnlukasik.client;
 
-import dmnlukasik.ejb.MyMessage;
+import dmnlukasik.commons.MyMessage;
 
 import javax.annotation.Resource;
 import javax.jms.*;
@@ -51,9 +51,7 @@ public class MessageProducerServlet extends HttpServlet {
         try {
             /* Retrieve a JMS connection from the queue connection factory. */
             connection = connectionFactory.createConnection();
-            /*
-             * Create the JMS session; not transacted and with auto-acknowledge.
-             */
+            /* Create the JMS session; not transacted and with auto-acknowledge. */
             Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
             /* Create a JMS message producer for the queue destination. */
             messageProducer = session.createProducer(queue);

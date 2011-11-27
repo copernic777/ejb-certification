@@ -9,6 +9,10 @@
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
 
+    <properties>
+
+    </properties>
+
     <modules>
         <module>stateful-session-1-web</module>
         <module>stateful-session-2-web</module>
@@ -29,6 +33,8 @@
         <module>asynch-ejb-invocation</module>
         <module>topic-message-driven-example</module>
         <module>queue-message-driven-example</module>
+        <module>message-driven-bean-se-client</module>
+        <module>commons</module>
     </modules>
 
     <build>
@@ -74,6 +80,15 @@
         </dependency>
     </dependencies>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>ejb-certification</groupId>
+                <artifactId>commons</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <repositories>
         <repository>
             <id>java.net-2</id>
