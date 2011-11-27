@@ -10,69 +10,67 @@ import java.util.concurrent.atomic.AtomicLong;
 
 public class MessageDrivenBeanSEClient {
 
-    private final static String JMS_CONNECTIONFACTORY_JNDI = "jms/QueueConnectionFactory";
-    private final static String JMS_JMS_QUEUEDESTINATION_JNDI = "jms/QueueDestination";
+    private final static String JMS_CONNECTION_FACTORY_JNDI = "jms/QueueConnectionFactory";
+    private final static String JMS_QUEUE_JNDI = "jms/QueueDestination";
 
-    private ConnectionFactory mQueueConnectionFactory;
-    private Queue mQueueDestination;
-    private AtomicLong mMessageNumber = new AtomicLong(0);
+    private ConnectionFactory connectionFactory;
+    private Queue queue;
+    private AtomicLong messageNumber = new AtomicLong(0);
 
     private void lookupJmsResources() throws NamingException {
         InitialContext theContext = new InitialContext();
         System.out.println("*** Starting JMS Resource Lookup...");
 
-        mQueueConnectionFactory = (ConnectionFactory) theContext.lookup(JMS_CONNECTIONFACTORY_JNDI);
-        mQueueDestination = (Queue) theContext.lookup(JMS_JMS_QUEUEDESTINATION_JNDI);
+        connectionFactory = (ConnectionFactory) theContext.lookup(JMS_CONNECTION_FACTORY_JNDI);
+        queue = (Queue) theContext.lookup(JMS_QUEUE_JNDI);
 
         System.out.println("    JMS Resource Lookup Finished.");
     }
 
     private void sendJmsMessage() throws JMSException {
-        MessageProducer theJMSMessageProducer;
-        Connection theJMSConnection = null;
+        Connection connection = null;
         try {
             /* Retrieve a JMS connection from the queue connection factory. */
-            theJMSConnection = mQueueConnectionFactory.createConnection();
+            connection = connectionFactory.createConnection();
             /* Create the JMS session; not transacted and with auto-acknowledge. */
-            Session theJMSSession = theJMSConnection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+            Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
             /* Create a JMS message producer for the queue destination. */
-            theJMSMessageProducer = theJMSSession.createProducer(mQueueDestination);
+            MessageProducer messageProducer = session.createProducer(queue);
             /* Create the object to be sent in the message created above. */
-            MyMessage theObjectToSend = new MyMessage();
-            theObjectToSend.setMessageNumber(mMessageNumber.incrementAndGet());
-            theObjectToSend.setMessageString("Hello Message Driven Beans");
-            theObjectToSend.setMessageTime(new Date());
+            MyMessage myMessage = new MyMessage();
+            myMessage.setMessageNumber(messageNumber.incrementAndGet());
+            myMessage.setMessageString("Hello Message Driven Beans");
+            myMessage.setMessageTime(new Date());
             /* Create message used to send a Java object. */
-            ObjectMessage theJmsObjectMessage = theJMSSession.createObjectMessage();
-            theJmsObjectMessage.setObject(theObjectToSend);
+            ObjectMessage objectMessage = session.createObjectMessage();
+            objectMessage.setObject(myMessage);
             /* Send the message. */
-            theJMSMessageProducer.send(theJmsObjectMessage);
+            messageProducer.send(objectMessage);
         } finally {
-            closeJmsResources(theJMSConnection);
+            closeJmsResources(connection);
         }
     }
 
-    private void closeJmsResources(Connection inJMSConnection) {
-        if (inJMSConnection != null) {
+    private void closeJmsResources(Connection connection) {
+        if (connection != null) {
             try {
-                inJMSConnection.close();
-            } catch (JMSException theException) {
-                // Ignore exceptions.
+                connection.close();
+            } catch (JMSException ignored) {
             }
         }
     }
 
     public static void main(String[] args) {
-        MessageDrivenBeanSEClient theClient = new MessageDrivenBeanSEClient();
+        MessageDrivenBeanSEClient client = new MessageDrivenBeanSEClient();
         try {
-            theClient.lookupJmsResources();
+            client.lookupJmsResources();
 
             for (int i = 0; i < 10; i++) {
-                theClient.sendJmsMessage();
+                client.sendJmsMessage();
                 System.out.println("### Sent message: " + (i + 1));
             }
-        } catch (Exception theException) {
-            theException.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
         System.out.println("*** Java SE JMS Client finished.");
