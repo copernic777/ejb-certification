@@ -37,6 +37,7 @@
         <module>commons</module>
         <module>ejb-transactions</module>
         <module>ejb-security-annotations</module>
+        <module>ejb-security-deployment-descriptor</module>
     </modules>
 
     <build>

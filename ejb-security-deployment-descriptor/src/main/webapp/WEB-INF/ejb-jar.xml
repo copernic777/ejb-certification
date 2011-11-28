@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar version="3.1" xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation=" http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_1.xsd">
+    <enterprise-beans>
+        <session>
+            <ejb-name>StatelessSession2Bean</ejb-name>
+            <local-bean/>
+            <ejb-class>dmnlukasik.ejb.StatelessSession2Bean</ejb-class>
+            <session-type>Stateless</session-type>
+
+            <!--
+                Inject the session context.
+                Note that the injection target class is the class in which
+                the instance variable is declared, which is the superclass
+                of the EJB implementation class.
+            -->
+            <resource-env-ref>
+                <resource-env-ref-name>java:comp/EJBContext</resource-env-ref-name>
+                <resource-env-ref-type>javax.ejb.EJBContext</resource-env-ref-type>
+                <injection-target>
+                    <injection-target-class>dmnlukasik.ejb.CommonStatelessSessionBean</injection-target-class>
+                    <injection-target-name>sessionContext</injection-target-name>
+                </injection-target>
+            </resource-env-ref>
+
+            <!--
+                Defines a security role used in the code of the EJB, for
+                instance when invoking isCallerInRole, and maps the
+                role name to a security role defined in the
+                <assembly-descriptor>.
+                The security role mapping is local to the component it
+                is defined in, in this case the StatelessSession2Bean EJB.
+            -->
+            <security-role-ref>
+                <!--
+                    The <role-name> element specifies the rolename
+                    used for programmatic security, that is, calling
+                    isCallerInRole.
+                -->
+                <role-name>superusers</role-name>
+                <!--
+                    Links the above role name to a security role defined
+                    in a <security-role> element in the <assembly-descriptor>
+                    below.
+                -->
+                <role-link>superusers</role-link>
+            </security-role-ref>
+            <security-role-ref>
+                <role-name>plainusers</role-name>
+                <role-link>plainusers</role-link>
+            </security-role-ref>
+        </session>
+
+        <session>
+            <ejb-name>StatelessSession1Bean</ejb-name>
+            <local-bean/>
+            <ejb-class>dmnlukasik.ejb.StatelessSession1Bean</ejb-class>
+            <session-type>Stateless</session-type>
+
+            <!--
+                Inject a reference to the second session bean.
+            -->
+            <ejb-local-ref>
+                <ejb-ref-name>StatelessSession2Bean</ejb-ref-name>
+                <ejb-ref-type>Session</ejb-ref-type>
+                <injection-target>
+                    <injection-target-class>dmnlukasik.ejb.StatelessSession1Bean</injection-target-class>
+                    <injection-target-name>bean2</injection-target-name>
+                </injection-target>
+            </ejb-local-ref>
+
+            <!--
+                Inject the session context.
+            -->
+            <resource-env-ref>
+                <resource-env-ref-name>java:comp/EJBContext</resource-env-ref-name>
+                <resource-env-ref-type>javax.ejb.EJBContext</resource-env-ref-type>
+                <injection-target>
+                    <injection-target-class>dmnlukasik.ejb.CommonStatelessSessionBean</injection-target-class>
+                    <injection-target-name>sessionContext</injection-target-name>
+                </injection-target>
+            </resource-env-ref>
+
+            <security-role-ref>
+                <role-name>superusers</role-name>
+                <role-link>superusers</role-link>
+            </security-role-ref>
+            <security-role-ref>
+                <role-name>plainusers</role-name>
+                <role-link>plainusers</role-link>
+            </security-role-ref>
+            <security-role-ref>
+                <role-name>runasadmin</role-name>
+                <role-link>runasadmin</role-link>
+            </security-role-ref>
+
+            <!--
+                Specifies the security identity the EJB will use when
+                calling other EJBs and Java EE components.
+                Corresponds to the @RunAs annotation.
+            -->
+            <security-identity>
+                <run-as>
+                    <role-name>runasadmin</role-name>
+                </run-as>
+            </security-identity>
+        </session>
+    </enterprise-beans>
+
+    <assembly-descriptor>
+        <!--
+            Defines the security roles used in the EJB module.
+            These roles are mapped to application server principals or
+            user groups in the application server specific deployment
+            descriptor - for GlassFish this is sun-ejb-jar.xml.
+        -->
+        <security-role>
+            <role-name>superusers</role-name>
+        </security-role>
+        <security-role>
+            <role-name>plainusers</role-name>
+        </security-role>
+        <security-role>
+            <role-name>runasadmin</role-name>
+        </security-role>
+
+        <!--
+            Allow access to all of the methods in the StatelessSession1Bean
+            for users in the superusers and plainusers security roles.
+        -->
+        <method-permission>
+            <role-name>superusers</role-name>
+            <role-name>plainusers</role-name>
+            <method>
+                <ejb-name>StatelessSession1Bean</ejb-name>
+                <method-name>*</method-name>
+            </method>
+        </method-permission>
+
+        <!--
+            Allow access to the greeting method in the StatelessSession2Bean
+            for users in the superusers, plainusers and runasadmin
+            security roles.
+        -->
+        <method-permission>
+            <role-name>superusers</role-name>
+            <role-name>plainusers</role-name>
+            <role-name>runasadmin</role-name>
+            <method>
+                <ejb-name>StatelessSession2Bean</ejb-name>
+                <method-name>greeting</method-name>
+            </method>
+        </method-permission>
+
+        <!--
+            Allow access to the superusersOnly method in the
+            StatelessSession2Bean for users in the superusers and
+            runasadmin security roles.
+        -->
+        <method-permission>
+            <role-name>superusers</role-name>
+            <role-name>runasadmin</role-name>
+            <method>
+                <ejb-name>StatelessSession2Bean</ejb-name>
+                <method-name>superusersOnly</method-name>
+            </method>
+        </method-permission>
+    </assembly-descriptor>
+</ejb-jar>
