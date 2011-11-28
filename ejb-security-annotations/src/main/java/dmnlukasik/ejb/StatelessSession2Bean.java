@@ -33,7 +33,7 @@ public class StatelessSession2Bean extends CommonStatelessSessionBean {
         return assembleGreeting(name, "StatelessSession2Bean");
     }
 
-    @RolesAllowed("superusers")
+    @RolesAllowed({"superusers", "runasadmin"})
     public String superusersOnly() {
         System.out.println("*** StatelessSession2Bean.superusersOnly");
         printSecurityInfo();
