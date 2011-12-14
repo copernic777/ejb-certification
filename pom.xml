@@ -38,6 +38,7 @@
         <module>ejb-transactions</module>
         <module>ejb-security-annotations</module>
         <module>ejb-security-deployment-descriptor</module>
+        <module>timer-example</module>
     </modules>
 
     <build>
