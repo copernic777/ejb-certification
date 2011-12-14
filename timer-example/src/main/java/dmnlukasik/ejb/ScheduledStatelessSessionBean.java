@@ -34,7 +34,7 @@ public class ScheduledStatelessSessionBean {
      *
      * @param timer Timer that caused the timeout callback invocation.
      */
-    @Schedule(second = "20, 45", minute = "*", hour = "6-22", dayOfWeek = "Mon-Fri", info = "MyTimer")
+//    @Schedule(second = "20, 45", minute = "*", hour = "6-22", dayOfWeek = "Mon-Fri", info = "MyTimer")
     private void scheduledMethod1(Timer timer) {
         out.println("ScheduledStatelessSessionBean.scheduledMethod1: "
                 + instanceNo + " entering at: " + new Date());
@@ -58,7 +58,7 @@ public class ScheduledStatelessSessionBean {
      * case with this method.
      */
     @SuppressWarnings("unused")
-    @Schedule(second = "15/10", minute = "*", hour = "*")
+//    @Schedule(second = "15/10", minute = "*", hour = "*")
     private void scheduledMethod2() {
         out.println("ScheduledStatelessSessionBean.scheduledMethod2: "
                 + instanceNo + " entering at: " + new Date());
