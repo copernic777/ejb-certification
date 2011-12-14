@@ -57,7 +57,15 @@ public class ProgrammaticTimerStartedBean implements TimedObject {
          * We could have used the timer service object in the instance
          * variable timerService with the same effect.
          */
-        timerService.createIntervalTimer(5000, 5000, timerConfig);
+        Timer timer = timerService.createIntervalTimer(5000, 5000, timerConfig);
+        /*
+         * Note that we can roll back timer creation despite the method
+         * having the transaction attribute NEVER.
+         */
+        sessionContext.setRollbackOnly();
+
+        System.out.println("   Creation rollback only: " + sessionContext.getRollbackOnly());
+        System.out.println("   Timer next timeout: " + timer.getNextTimeout());
     }
 
     /**
